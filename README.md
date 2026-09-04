@@ -5,11 +5,12 @@
 [![Award](https://img.shields.io/badge/Award-National%20Second%20Prize-DAA520)](#award)
 [![Top 2%](https://img.shields.io/badge/Ranking-Top%202%25-8A2BE2)](#award)
 [![MATLAB](https://img.shields.io/badge/MATLAB-numerical%20modeling-E16737?logo=mathworks&logoColor=white)](code/)
+[![LaTeX](https://img.shields.io/badge/LaTeX-Overleaf%20source-008080?logo=latex&logoColor=white)](paper/source/)
 [![Paper](https://img.shields.io/badge/Paper-PDF-B31B1B?logo=adobeacrobatreader&logoColor=white)](paper/paper.pdf)
 [![CUMCM](https://img.shields.io/badge/CUMCM-2024%20Problem%20A-1F6FEB)](problem/problem-a-zh.pdf)
 [![Language](https://img.shields.io/badge/Paper-Chinese-DE2910)](paper/paper.pdf)
 
-This repository contains the complete award-winning paper, MATLAB implementation, numerical outputs, and visualizations produced for Problem A of the 2024 China Undergraduate Mathematical Contest in Modeling (CUMCM). The project turns a traditional Chinese bench-dragon performance into a computational geometry and constrained-motion problem.
+This repository contains the complete award-winning paper, its original Overleaf/LaTeX source, the MATLAB implementation, numerical outputs, and visualizations produced for Problem A of the 2024 China Undergraduate Mathematical Contest in Modeling (CUMCM). The project turns a traditional Chinese bench-dragon performance into a computational geometry and constrained-motion problem.
 
 ## Award
 
@@ -34,6 +35,7 @@ The project was recognized with a **National Second Prize** in the 2024 China Un
       <p><strong>2024 CUMCM National Second Prize · Top 2%</strong></p>
       <p>The 58-page paper derives the position and velocity recurrences, formulates geometric collision tests, searches for the minimum feasible spiral pitch, optimizes an S-shaped turning path, and estimates the maximum safe head speed.</p>
       <p><strong><a href="paper/paper.pdf">Read the complete paper (PDF) →</a></strong></p>
+      <p><a href="paper/source/">Browse the original Overleaf/LaTeX source</a></p>
       <p><a href="problem/problem-a-zh.pdf">Original Problem A statement</a> · <a href="results/">Numerical result workbooks</a></p>
     </td>
   </tr>
@@ -45,9 +47,10 @@ The project was recognized with a **National Second Prize** in the 2024 China Un
 - **Computational geometry:** represented 223 rigid benches through 224 handle points and tested rectangle-level collision conditions.
 - **Numerical methods:** used ODE solving, root finding, iterative search, and time-stepped simulation across five related tasks.
 - **Optimization:** minimized feasible spiral pitch and turning-path length under collision and kinematic constraints.
-- **Scientific communication:** connected derivations, algorithms, visual validation, and spreadsheet outputs in a complete technical paper.
+- **Reproducible research:** preserved the original Overleaf/LaTeX manuscript, figures, code, and numerical outputs together.
+- **Scientific communication:** connected derivations, algorithms, visual validation, and spreadsheet outputs in a 58-page technical paper.
 
-The implementation includes **41 MATLAB source files**, three contest-format result workbooks, MATLAB figure sources, and publication-ready visualizations.
+The release includes **41 MATLAB source files**, the complete LaTeX manuscript and its 26 referenced figures, three contest-format result workbooks, and editable MATLAB figure sources.
 
 ## Modeling pipeline
 
@@ -117,6 +120,8 @@ results/
   result4.xlsx           Problem 4 turning-path output
 paper/
   paper.pdf              Complete 58-page Chinese paper
+  paper-preview.png      README cover preview
+  source/                Original Overleaf/LaTeX project and build guide
 problem/
   problem-a-zh.pdf       Original Chinese problem statement
 figures/                 Rendered results and editable MATLAB .fig files
@@ -138,8 +143,21 @@ problem1
 
 Replace `problem1` with `problem2`, `problem3`, `problem4`, or `problem5`. Some scripts use very small search steps and can take substantial time. The original output workbooks are available in [`results/`](results/) for inspection without re-running the full search.
 
+## Building the paper
+
+The original `cumcm.tex` exported from Overleaf is preserved unchanged under [`paper/source/`](paper/source/), together with the competition document class and every referenced figure. The public version excludes proprietary SimSun and SimKai font files and provides portable TeX Live font fallbacks instead.
+
+Compile with XeLaTeX from the `paper/source/` directory:
+
+```bash
+xelatex CUMCMThesis-master/cumcm.tex
+xelatex CUMCMThesis-master/cumcm.tex
+```
+
+See the [LaTeX source guide](paper/source/README.md) for local and Overleaf instructions. Minor typography may differ from the submitted PDF when fallback fonts are used.
+
 ## Scope and reproducibility
 
-This repository preserves the original contest implementation and reorganizes it as a readable research artifact. The code has not been refactored into a general-purpose library, packaged with automated tests, or revalidated on the current machine. The README distinguishes paper-reported results from independently reproduced results accordingly.
+This repository preserves the original contest implementation and Overleaf manuscript, then organizes them as a readable research artifact. The code has not been refactored into a general-purpose library, packaged with automated tests, or revalidated on the current machine. The README distinguishes paper-reported results from independently reproduced results accordingly.
 
 No open-source license has been granted. The paper, code, data, and figures remain under their respective authors' and source owners' copyrights.
