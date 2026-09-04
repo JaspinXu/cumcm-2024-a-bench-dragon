@@ -88,25 +88,6 @@ The five contest tasks build on one another:
 
 These values are results reported in the paper and preserved output files; they were not independently re-run during repository packaging.
 
-## Results preview
-
-<table>
-  <tr>
-    <td align="center"><img src="figures/q1.png" alt="Handle positions on the inward spiral"></td>
-    <td align="center"><img src="figures/q3.png" alt="Bench configuration near the turning boundary"></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Recursive handle placement</strong></td>
-    <td align="center"><strong>Minimum-pitch feasibility analysis</strong></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><img src="figures/429.png" alt="S-shaped turning path with 4.29 metre effective radius" width="520"></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><strong>Optimized inward-turn-outward trajectory</strong></td>
-  </tr>
-</table>
-
 ## Technical approach
 
 ### Position and velocity propagation
