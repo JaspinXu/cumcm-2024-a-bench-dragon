@@ -1,13 +1,23 @@
 # Bench Dragon Motion Modeling · 2024 CUMCM Problem A
 
-**A geometry-first MATLAB study of the kinematics, collision constraints, path planning, and speed optimization of a 223-bench dragon.**
+**National Second Prize (Top 2%) in the 2024 China Undergraduate Mathematical Contest in Modeling — a geometry-first MATLAB study of the kinematics, collision constraints, path planning, and speed optimization of a 223-bench dragon.**
 
+[![Award](https://img.shields.io/badge/Award-National%20Second%20Prize-DAA520)](#award)
+[![Top 2%](https://img.shields.io/badge/Ranking-Top%202%25-8A2BE2)](#award)
 [![MATLAB](https://img.shields.io/badge/MATLAB-numerical%20modeling-E16737?logo=mathworks&logoColor=white)](code/)
 [![Paper](https://img.shields.io/badge/Paper-PDF-B31B1B?logo=adobeacrobatreader&logoColor=white)](paper/paper.pdf)
 [![CUMCM](https://img.shields.io/badge/CUMCM-2024%20Problem%20A-1F6FEB)](problem/problem-a-zh.pdf)
 [![Language](https://img.shields.io/badge/Paper-Chinese-DE2910)](paper/paper.pdf)
 
-This repository contains the complete paper, MATLAB implementation, numerical outputs, and visualizations produced for Problem A of the 2024 China Undergraduate Mathematical Contest in Modeling (CUMCM). The project turns a traditional Chinese bench-dragon performance into a computational geometry and constrained-motion problem.
+This repository contains the complete award-winning paper, MATLAB implementation, numerical outputs, and visualizations produced for Problem A of the 2024 China Undergraduate Mathematical Contest in Modeling (CUMCM). The project turns a traditional Chinese bench-dragon performance into a computational geometry and constrained-motion problem.
+
+## Award
+
+> **2024 CUMCM National Second Prize · Top 2% nationwide**
+>
+> 中国大学生数学建模竞赛国家级二等奖（全国前 2%）
+
+The project was recognized with a **National Second Prize** in the 2024 China Undergraduate Mathematical Contest in Modeling, placing it in the **top 2% of participating teams**.
 
 ## Paper
 
@@ -21,6 +31,7 @@ This repository contains the complete paper, MATLAB implementation, numerical ou
     <td width="66%" valign="top">
       <h3>几何视域下板凳龙在盘龙全过程的姿态研究</h3>
       <p><em>A Geometric Study of Bench-Dragon Posture Throughout the Coiling Process</em></p>
+      <p><strong>2024 CUMCM National Second Prize · Top 2%</strong></p>
       <p>The 58-page paper derives the position and velocity recurrences, formulates geometric collision tests, searches for the minimum feasible spiral pitch, optimizes an S-shaped turning path, and estimates the maximum safe head speed.</p>
       <p><strong><a href="paper/paper.pdf">Read the complete paper (PDF) →</a></strong></p>
       <p><a href="problem/problem-a-zh.pdf">Original Problem A statement</a> · <a href="results/">Numerical result workbooks</a></p>
